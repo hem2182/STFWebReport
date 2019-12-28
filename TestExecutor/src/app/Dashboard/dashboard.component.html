@@ -1,0 +1,129 @@
+﻿<div>
+    <spinner name="mySpinner"></spinner>
+</div>
+
+<!--<p-dialog header="Title" [(visible)]="display">
+    A popup is opened.
+</p-dialog>
+<button type="button" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show"></button>-->
+<span defaultOverlayTarget></span>
+<h2>Basic Modal sample</h2>
+<button (click)="dialog()">shoe dialog</button>
+
+
+<popup (confirmClick)="YourConfirmEvent()" (cancelClick)="YourCancelEvent()">
+    Add your custom html elements here
+</popup>
+
+
+<!--<spinner name="mySpinner" [(show)]="showSpinner"></spinner>
+
+<spinner name="mySpinner" [show]="spinnerShowing"></spinner>-->
+<!--<form #employeeForm="ngForm" (ngSubmit)="Submit(employeeForm)">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Employee Form</div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="form-group col-sm-2">
+                    <label class="control-label" [class.text-danger]="fullNameControl.invalid && fullNameControl.touched" for="fullname">Fullname</label>
+                    <input required id="fullname" name="fn" [(ngModel)]="fullname" #fullNameControl="ngModel" type="text"
+                           class="form-control" [class.is-invalid]="fullNameControl.invalid && fullNameControl.touched" />
+                    <span class="text-danger" *ngIf="fullNameControl.invalid && fullNameControl.touched">Invalid FullName</span>
+                </div>
+                <div class="form-group col-sm-2">
+                    <label for="email">Email</label>
+                    <input required id="email" name="email" [(ngModel)]="email " type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-2">
+                    <label for="environment" class="control-label" [class.text-danger]="environmentControl.invalid && environmentControl.touched">Environment</label>
+                    <select class="form-control" [class.text-danger]="environmentControl.invalid && environmentControl.touched"
+                            #environmentControl="ngModel" required id="environment" name="environment" [(ngModel)]="environment">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <span class="text-danger" *ngIf="environmentControl.invalid && environmentControl.touched">Invalid FullName</span>
+                </div>
+                <div class="form-group col-sm-2">
+                    <button type="submit" [disabled]="employeeForm.invalid" class="btn btn-primary form-control">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>-->
+<!--<div style="display: block; width:400px; height:400px;">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [colors]="pieChartColors"
+            [options]="pechartOptions"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+</div>-->
+
+<!--<div class="col-md-6 col-md-offset-3">
+    <h1>Home</h1>
+    <p>{{bodyText}}</p>
+    <button (click)="openModal('custom-modal-1')">Open Modal 1</button>
+</div>
+
+<modal id="custom-modal-1">
+    <div class="modal">
+        <div class="modal-body">
+            <h1>A Custom Modal!</h1>
+            <p>
+                Home page text: <input type="text" [(ngModel)]="bodyText" />
+            </p>
+            <button (click)="closeModal('custom-modal-1');">Close</button>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>-->
+
+
+
+<!--<div>
+    <p>Exporting an excel file of type .xslx !!!</p>
+
+    <p>Export as XLSX by clicking the below button</p>
+
+    <button (click)="exportAsXLSX(data)"><i class="fa fa-file-excel-o" style="font-size:48px;color:blue"></i></button>
+    <button (click)="hideSpinner()">Hide Spinner</button>
+    <label for="searchString">
+        Filter By Name:
+        <input type="text" id="searchString" name="searchString" [(ngModel)]="searchString" #nameFilterControl="ngModel" />{{nameFilterControl.value}}
+    </label>
+    <table border="1">
+        <thead>
+            <tr>
+                <th (click)="sort('col1')">Column1<i class="fa" [ngClass]="{'fa-sort': column != 'col1', 'fa-sort-asc': (column == 'col1' && isDesc), 'fa-sort-desc': (column == 'col1' && !isDesc) }" aria-hidden="true"> </i></th>
+                <th (click)="sort('col2')">Column2<i class="fa" [ngClass]="{'fa-sort': column != 'col2', 'fa-sort-asc': (column == 'col2' && isDesc), 'fa-sort-desc': (column == 'col2' && !isDesc) }" aria-hidden="true"> </i></th>
+                <th>Column3</th>
+                <th>Column4</th>
+                <th>Column5</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let object of data">
+            <tr colspan="5">
+                <td style="background:lightblue">{{object.key}}</td>
+            </tr>
+            <tr *ngFor="let x of object.value | filter : 'col1' : searchString | orderBy: {property: column, direction: direction}">
+                <td>{{x.col1}}</td>
+                <td>{{x.col2}}</td>
+                <td>{{x.col3}}</td>
+                <td>{{x.col4}}</td>
+                <td>{{x.col5}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+<!--<spinner loadingImage="path/to/loading.gif" [show]="show"></spinner>-->
+<!--<spinner>
+    <h1>Loading...</h1>
+</spinner>-->
+<!--<angular-loader>Loading...</angular-loader>-->
