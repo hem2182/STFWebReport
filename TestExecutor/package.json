@@ -50,7 +50,7 @@
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
     "underscore": "^1.9.1",
-    "xlsx": "^0.14.1",
+    "xlsx": "^0.17.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
